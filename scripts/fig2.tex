@@ -1,0 +1,9 @@
+% Fig. 2: panels a-b (fig2_ab.pdf) overlaid on the c-d canvas (fig2_cd.pdf). Compiled from figures/ by make.
+\documentclass[border=0pt]{standalone}
+\usepackage{graphicx,tikz}
+\begin{document}
+\begin{tikzpicture}[x=1mm,y=1mm]
+  \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=180mm,height=112mm]{fig2_cd.pdf}};
+  \node[anchor=north west,inner sep=0] at (0.5,111.5) {\includegraphics{fig2_ab.pdf}};
+\end{tikzpicture}
+\end{document}
